@@ -1,7 +1,11 @@
 streamlit
-streamlit_option_menu
-shapely
-scipy
 pandas
 numpy
 matplotlib
+scipy
+shapely
+tempfile
+reportlab
+io
+datetime
+
