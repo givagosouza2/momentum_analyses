@@ -5,6 +5,5 @@ matplotlib
 scipy
 shapely
 reportlab
-io
 datetime
 
