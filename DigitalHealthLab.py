@@ -532,7 +532,7 @@ with tab1:
                 yML[slider_min:slider_max], yAP[slider_min:slider_max])
 
             # Extracting features: total deviation, rmsAP, rmsML
-            total_deviation = sum(np.sqrt(norm[slider_min:slider_max]))
+            total_deviation = sum(np.sqrt(yAP[slider_min:slider_max]**2+yML[slider_min:slider_max]**2))
             rmsAP = np.sqrt(np.mean(np.square(yAP[slider_min:slider_max])))
             rmsML = np.sqrt(np.mean(np.square(yML[slider_min:slider_max])))
 
