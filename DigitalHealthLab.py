@@ -907,7 +907,7 @@ with tab2:
 
             # Filtering acceleration data norm
             norm_waveform = butterworth_filter(
-                norm_waveform, 10, 100, order=2, btype='low')
+                norm_waveform, 4, 100, order=2, btype='low')
 
         # Allocation of the gyroscope data to the variables
         if uploaded_gyro_iTUG is not None:
@@ -946,7 +946,7 @@ with tab2:
 
             # Filtering norm for acceleration
             norm_waveform_gyro = butterworth_filter(
-                norm_waveform_gyro, 10, 100, order=2, btype='low')
+                norm_waveform_gyro, 1.5, 100, order=2, btype='low')
 
             # Creating controls to interacts with the plots
             with t1:
