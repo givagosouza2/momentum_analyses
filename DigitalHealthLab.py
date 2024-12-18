@@ -1304,7 +1304,7 @@ with tab2:
                     file.write('Duração da caminhada de ida (s) = ' +
                                str(round(walking_to_go_duration, 2)) + "\n")
                     file.write('Duração da caminhada de retorno (s) = ' +
-                               str(round(standing_to_sit_duration, 2)) + "\n")
+                               str(round(walking_to_return_duration, 2)) + "\n")
                     file.write('Duração de pé para sentar (s) = ' +
                                str(round(standing_to_sit_duration, 2)) + "\n")
                     file.write('Pico de A1 (g) = ' +
