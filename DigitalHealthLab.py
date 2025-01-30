@@ -332,6 +332,7 @@ def set_ellipse(fpML, fpAP):
 
 # Set the page expanded configuration with two tabs
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
+limite = number = st.number_input("Insert a number")
 init, tab1, tab2, tab3, tab4, infoUs, videos, contact = st.tabs(
     ["Projeto Momentum", "Equilíbrio estático", "iTUG", "Finger tapping test", "Tremor de mão", "Quem somos nós?", "Vídeos", "Contate-nos"])
 with init:
@@ -581,7 +582,7 @@ with tab1:
                 plt.xlabel('Frequência Temporal (Hz)')
                 plt.ylabel('Magnitude de aceleração AP (g)')
                 plt.xlim(0, 6)
-                plt.ylim(0, lim/25)
+                plt.ylim(0, limite)
                 bufferplot2 = BytesIO()
                 plt.savefig(bufferplot2, format="png")
                 bufferplot2.seek(0)
@@ -623,7 +624,7 @@ with tab1:
                 plt.xlabel('Frequência Temporal (Hz)')
                 plt.ylabel('Energia da aceleração ML (g^2)')
                 plt.xlim(0, 6)
-                plt.ylim(0, lim/25)
+                plt.ylim(0, 0, limite)
                 bufferplot5 = BytesIO()
                 plt.savefig(bufferplot5, format="png")
                 bufferplot5.seek(0)
