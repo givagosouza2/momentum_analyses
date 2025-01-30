@@ -624,7 +624,7 @@ with tab1:
                 plt.xlabel('Frequência Temporal (Hz)')
                 plt.ylabel('Energia da aceleração ML (g^2)')
                 plt.xlim(0, 6)
-                plt.ylim(0, 0, limite)
+                plt.ylim(0, limite)
                 bufferplot5 = BytesIO()
                 plt.savefig(bufferplot5, format="png")
                 bufferplot5.seek(0)
