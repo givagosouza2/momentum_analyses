@@ -568,8 +568,8 @@ with tab1:
                 plt.plot(ellipse_fit[:, 0], ellipse_fit[:, 1], 'r')
                 plt.fill(ellipse_fit[:, 0], ellipse_fit[:,
                          1], color='tomato', alpha=0.5)
-                plt.xlabel('Aceleração ML (g)')
-                plt.ylabel('Aceleração AP (g)')
+                plt.xlabel('Acceleration ML (g)')
+                plt.ylabel('Acceleration AP (g)')
                 plt.ylim(-limite, limite)
                 plt.xlim(-limite, limite)
                 bufferplot1 = BytesIO()
@@ -579,8 +579,8 @@ with tab1:
 
                 plt.figure(figsize=(5, 5))
                 plt.plot(frequencies, spectrum_amplitude_AP, 'k')
-                plt.xlabel('Frequência Temporal (Hz)')
-                plt.ylabel('Magnitude de aceleração AP (g)')
+                plt.xlabel('Time frequency (Hz)')
+                plt.ylabel('Normalized spectral amplitude AP (g)')
                 plt.xlim(0, 6)
                 plt.ylim(0, limite*0.05)
                 bufferplot2 = BytesIO()
@@ -597,8 +597,8 @@ with tab1:
                 if checkbox_2 == True:
                     plt.plot(xAP[slider_min:slider_max],
                              yAP[slider_min:slider_max], 'k')
-                plt.xlabel('Tempo (s)')
-                plt.ylabel('Aceleração AP (g)')
+                plt.xlabel('Time (s)')
+                plt.ylabel('Acceleration AP (g)')
                 plt.ylim(-limite, limite)
                 bufferplot3 = BytesIO()
                 plt.savefig(bufferplot3, format="png")
@@ -611,8 +611,8 @@ with tab1:
                 if checkbox_2 == True:
                     plt.plot(xML[slider_min:slider_max],
                              yML[slider_min:slider_max], 'k')
-                plt.xlabel('Tempo (s)')
-                plt.ylabel('Aceleração ML (g)')
+                plt.xlabel('Time (s)')
+                plt.ylabel('Acceleration ML (g)')
                 plt.ylim(-limite, limite)
                 bufferplot4 = BytesIO()
                 plt.savefig(bufferplot4, format="png")
@@ -621,8 +621,8 @@ with tab1:
 
                 plt.figure(figsize=(5, 5))
                 plt.plot(frequencies, spectrum_amplitude_ML, 'k')
-                plt.xlabel('Frequência Temporal (Hz)')
-                plt.ylabel('Energia da aceleração ML (g^2)')
+                plt.xlabel('Time frequency (Hz)')
+                plt.ylabel('Normalized spectral amplitude AP (g)')
                 plt.xlim(0, 6)
                 plt.ylim(0, limite*0.05)
                 bufferplot5 = BytesIO()
