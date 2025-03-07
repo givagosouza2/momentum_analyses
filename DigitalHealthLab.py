@@ -334,7 +334,7 @@ def set_ellipse(fpML, fpAP):
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 limite = number = st.number_input("Insert a number")
 init, tab1, tab2, tab3, tab4, infoUs, videos, contact = st.tabs(
-    ["Projeto Momentum", "Equilíbrio estático", "iTUG", "Finger tapping test", "Tremor de mão", "Quem somos nós?", "Vídeos", "Contate-nos"])
+    ["Projeto Momentum 2", "Equilíbrio estático", "iTUG", "Finger tapping test", "Tremor de mão", "Quem somos nós?", "Vídeos", "Contate-nos"])
 with init:
 
     # Agora você pode adicionar o conteúdo do seu site
@@ -451,7 +451,7 @@ st.markdown(footer, unsafe_allow_html=True)
 # Algorithm to proceed static balance control analysis
 with tab1:
     st.markdown(
-        '<h2 style="text-align: center; color: blue;">Avaliação do equilíbrio estático em smartphone</h2>', unsafe_allow_html=True)
+        '<h2 style="text-align: center; color: blue;">Avaliação do equilíbrio estático em smartphone TESTE</h2>', unsafe_allow_html=True)
 
     t1, t2, t3 = st.columns([1, 1, 1])
 
