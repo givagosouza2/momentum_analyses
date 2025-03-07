@@ -332,7 +332,7 @@ def set_ellipse(fpML, fpAP):
 
 # Set the page expanded configuration with two tabs
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
-limite = number = st.number_input("Insert a number")
+limite = number = st.number_input("Insert a number",value=0.1)
 init, tab1, tab2, tab3, tab4, infoUs, videos, contact = st.tabs(
     ["Projeto Momentum", "Equilíbrio estático", "iTUG", "Finger tapping test", "Tremor de mão", "Quem somos nós?", "Vídeos", "Contate-nos"])
 with init:
