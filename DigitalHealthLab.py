@@ -622,7 +622,7 @@ with tab1:
                 plt.figure(figsize=(5, 5))
                 plt.plot(frequencies, spectrum_amplitude_ML, 'k')
                 plt.xlabel('Time frequency (Hz)')
-                plt.ylabel('Normalized spectral amplitude AP (g)')
+                plt.ylabel('Normalized spectral amplitude ML (g)')
                 plt.xlim(0, 6)
                 plt.ylim(0, limite*0.05)
                 bufferplot5 = BytesIO()
