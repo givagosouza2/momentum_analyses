@@ -457,7 +457,7 @@ with tab1:
 
     # Acceleration file upload button
     uploaded_acc = st.file_uploader(
-        "Selecione o aquivo de texto do acelerômetro", type=["txt"],)
+        "Selecione o aquivo de texto do acelerômetro Teste", type=["txt"],)
 
     # Check if a file has been uploaded
     if uploaded_acc is not None:
