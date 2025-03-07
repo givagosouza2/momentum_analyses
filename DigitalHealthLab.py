@@ -451,13 +451,13 @@ st.markdown(footer, unsafe_allow_html=True)
 # Algorithm to proceed static balance control analysis
 with tab1:
     st.markdown(
-        '<h2 style="text-align: center; color: blue;">Avaliação do equilíbrio estático em smartphone TESTE</h2>', unsafe_allow_html=True)
+        '<h2 style="text-align: center; color: blue;">Avaliação do equilíbrio estático em smartphone</h2>', unsafe_allow_html=True)
 
     t1, t2, t3 = st.columns([1, 1, 1])
 
     # Acceleration file upload button
     uploaded_acc = st.file_uploader(
-        "Selecione o aquivo de texto do acelerômetro Teste", type=["txt"],)
+        "Selecione o aquivo de texto do acelerômetro", type=["txt"],)
 
     # Check if a file has been uploaded
     if uploaded_acc is not None:
