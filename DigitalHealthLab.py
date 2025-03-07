@@ -334,7 +334,7 @@ def set_ellipse(fpML, fpAP):
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 limite = number = st.number_input("Insert a number")
 init, tab1, tab2, tab3, tab4, infoUs, videos, contact = st.tabs(
-    ["Projeto Momentum 2", "Equilíbrio estático", "iTUG", "Finger tapping test", "Tremor de mão", "Quem somos nós?", "Vídeos", "Contate-nos"])
+    ["Projeto Momentum", "Equilíbrio estático", "iTUG", "Finger tapping test", "Tremor de mão", "Quem somos nós?", "Vídeos", "Contate-nos"])
 with init:
 
     # Agora você pode adicionar o conteúdo do seu site
